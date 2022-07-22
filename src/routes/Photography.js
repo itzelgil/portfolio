@@ -32,6 +32,7 @@ import godafossWaterfall from "./photography/Around the world/godafoss2.jpg";
 import reykj2 from "./photography/Around the world/reykjavik.jpg";
 import dettifoss from "./photography/Around the world/dettifoss.jpg";
 import sena from "./photography/Around the world/sena-river-view.jpg";
+import { Outlet } from "react-router-dom";
 
 export default function Photography() {
   return (
@@ -234,6 +235,7 @@ export default function Photography() {
           </p>
         </div>
       </Container>
+      <Outlet />
     </Container>
   );
 }

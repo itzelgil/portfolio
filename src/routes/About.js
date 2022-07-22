@@ -14,6 +14,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
+import { Outlet} from "react-router-dom";
 
 export default function About() {
   return (
@@ -28,7 +29,8 @@ export default function About() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/about">
+              </Nav.Link>
               <NavDropdown title="Projects" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Coding</NavDropdown.Item>
                 <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
@@ -107,6 +109,7 @@ export default function About() {
       <br />
       <br />
       <br />
+      <Outlet />
     </div>
   );
 }
