@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -66,6 +65,7 @@ export default function Photography() {
             className="instagram"
             target="_blank"
             title="insta-icon"
+            rel="noreferrer"
           >
             <AiOutlineInstagram className="ig contact-icon" />
           </a>
@@ -74,6 +74,7 @@ export default function Photography() {
             className="github"
             target="_blank"
             title="github-icon"
+            rel="noreferrer"
           >
             <AiFillGithub className="github contact-icon" />
           </a>
@@ -81,6 +82,7 @@ export default function Photography() {
             href="https://www.linkedin.com/in/itzelgile/"
             className="linkedin"
             title="linkedin-icon"
+            rel="noreferrer"
           >
             <AiFillLinkedin className="linkedin contact-icon" />
           </a>
@@ -92,6 +94,7 @@ export default function Photography() {
           alt="github-repo"
           title="github-repo"
           target="_blank"
+          rel="noreferrer"
         >
           Open source code
         </a>
