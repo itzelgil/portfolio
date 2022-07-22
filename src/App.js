@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Row from "react-bootstrap/Row";
+import { Outlet, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Row className="row">
+        <h1>("Hello, world!");</h1>
+      </Row>
+      <Row className="row">
+        <p className="name-ocupation">I'm Itzel Gil 👋🏽 </p>
+      </Row>
+      <Row className="row">
+        <p className="name-ocupation">Front-end Developer</p>
+      </Row>
+
+      <Row className="row">
+          <Link to="/about" className="enter-button">ENTER</Link>
+      </Row>
+      <Outlet />
     </div>
   );
 }
