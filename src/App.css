@@ -110,7 +110,7 @@ h1 {
 .icons,
 .icon {
   font-size: 40px;
-  animation: float 5s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   color: #c696eb;
   text-align: center;
   padding: 1px;
@@ -154,6 +154,12 @@ h1 {
 }
 
 /* PHOTOGRAPHY */
+
+.navbarPhoto {
+  margin: 10;
+  background-color: #000000;
+  border-bottom: 4px solid #d8728a;
+}
 .photo-title {
   font-size: 42px;
   text-align: center;
@@ -176,7 +182,7 @@ h1 {
 }
 
 .grid-container {
-  columns: 3 200px;
+  columns: 3;
   column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
@@ -190,22 +196,78 @@ h1 {
   border-radius: 5px;
   transition: all 0.25s ease-in-out;
 }
-img {
-  width: 100%;
-  border-radius: 5px;
-  transition: all 0.25s ease-in-out;
-}
 .description {
   margin: 5px 0;
   padding: 0;
   text-align: center;
   font-size: small;
-
 }
-.cont{
+.cont {
   padding-bottom: 25px;
 }
 
-.copy {
+/* CONTACT */
+
+.navbarContact {
+  margin: 10;
+  background-color: #000000;
+  border-bottom: 4px solid #6db8d3;
+}
+
+.contact-title {
+  font-size: 42px;
   text-align: center;
+  margin: 30px;
+}
+
+.contact-title:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 4px;
+  background: #6db8d3;
+  margin: 0 auto;
+  margin-top: 7px;
+  border-radius: 3px;
+}
+
+.title {
+  text-align: center;
+}
+
+.email,
+.social {
+  text-align: center;
+  font-size: 18px;
+}
+
+.email a {
+  color: #6db8d3;
+  text-decoration: none;
+}
+
+.social {
+  font-size: 24px;
+  margin: 5px 0 0;
+}
+
+.social,
+.contact-icon {
+  color: #6db8d3;
+}
+
+.contact-icon {
+  display: inline-block;
+  font-size: 34px;
+}
+
+.signature {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.signature a {
+  text-decoration: none;
+  color: #6db8d3;
 }

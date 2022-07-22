@@ -33,13 +33,10 @@ import reykj2 from "./photography/Around the world/reykjavik.jpg";
 import dettifoss from "./photography/Around the world/dettifoss.jpg";
 import sena from "./photography/Around the world/sena-river-view.jpg";
 
-
-
-
 export default function Photography() {
   return (
     <Container fluid>
-      <Navbar bg="dark" expand="md" variant="dark" className="navbar">
+      <Navbar bg="dark" expand="md" variant="dark" className="navbarPhoto">
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} className="App-logo" alt="logo" />
@@ -52,12 +49,10 @@ export default function Photography() {
               <Nav.Link href="/about">About</Nav.Link>
               <NavDropdown title="Projects" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Coding</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Photography
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">UX/UI</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#link">Contact</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
               <Nav.Link href="#link">CV</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -69,37 +64,54 @@ export default function Photography() {
       <br />
       <h2 className="life">Black and white</h2>
       <Container fluid className="grid-container cont">
-        <img src={laucoco} className="img-fluid" />
-        <p className="description">Lau and Coco at our balcony</p>
+        <div className="image">
+          <img src={laucoco} className="img-fluid" />
+          <p className="description">Lau and Coco at our balcony</p>
+        </div>
 
-        <img src={gothic} className="img-fluid" />
-        <p className="description">Gothic quarter, Barcelona.</p>
+        <div className="image">
+          <img src={gothic} className="img-fluid" />
+          <p className="description">Gothic quarter, Barcelona.</p>
+        </div>
 
-        <img src={iceland} className="img-fluid" />
-        <p className="description">Hallgrímskirkja, Reykjavík Iceland.</p>
+        <div className="image">
+          <img src={iceland} className="img-fluid" />
+          <p className="description">Hallgrímskirkja, Reykjavík Iceland.</p>
+        </div>
 
-        <img src={miracoli} className="img-fluid" />
-        <p className="description">Piazza dei Miracoli, Pisa, Italy.</p>
+        <div className="image">
+          <img src={miracoli} className="img-fluid" />
+          <p className="description">Piazza dei Miracoli, Pisa, Italy.</p>
+        </div>
 
-        <img src={sebas} className="img-fluid" />
-        <p className="description">Sebas at MACBA Museum in Barcelona.</p>
+        <div className="image">
+          <img src={sebas} className="img-fluid" />
+          <p className="description">Sebas at MACBA Museum in Barcelona.</p>
+        </div>
 
-        <img src={catalunya} className="img-fluid" />
-        <p className="description">Catalunya manifestation.</p>
+        <div className="image">
+          <img src={catalunya} className="img-fluid" />
+          <p className="description">Catalunya manifestation.</p>
+        </div>
 
-        <img src={abraham} className="img-fluid" />
-        <p className="description">
-          Abraham on the rocks, at a black sand beach in Iceland.
-        </p>
+        <div className="image">
+          <img src={abraham} className="img-fluid" />
+          <p className="description">
+            Abraham on the rocks, at a black sand beach in Iceland.
+          </p>
+        </div>
 
-        <img src={coco} className="img-fluid" />
-        <p className="description">Coco in Rome.</p>
+        <div className="image">
+          <img src={coco} className="img-fluid" />
+          <p className="description">Coco in Rome.</p>
+        </div>
 
-        <img src={paris} className="img-fluid" />
-        <p className="description">
-          Psyche Revived by Cupid's Kiss at Louvre Museum, Paris, France.
-        </p>
-
+        <div className="image">
+          <img src={paris} className="img-fluid" />
+          <p className="description">
+            Psyche Revived by Cupid's Kiss at Louvre Museum, Paris, France.
+          </p>
+        </div>
         <img src={cocopark} className="img-fluid" />
         <p className="description">Coco at the park.</p>
       </Container>
@@ -107,82 +119,120 @@ export default function Photography() {
       <br />
       <h2 className="life">Around the world</h2>
       <Container fluid className="grid-container cont">
-        <img src={eiffel} className="img-fluid" />
-        <p className="description">
-          Eiffel tower from below. Paris, France. July, 2017.
-        </p>
+        <div className="image">
+          <img src={eiffel} className="img-fluid" />
+          <p className="description">
+            Eiffel tower from below. Paris, France. July, 2017.
+          </p>
+        </div>
 
-        <img src={catfirenze} className="img-fluid" />
-        <p className="description">
-          Cattedrale di Santa Maria del Fiore, Firenze, Italy. Dec, 2017
-        </p>
+        <div className="image">
+          <img src={catfirenze} className="img-fluid" />
+          <p className="description">
+            Cattedrale di Santa Maria del Fiore, Firenze, Italy. Dec, 2017
+          </p>
+        </div>
 
-        <img src={lungarno} className="img-fluid" />
-        <p className="description">Lungarno, Pisa, Italy.</p>
+        <div className="image">
+          <img src={lungarno} className="img-fluid" />
+          <p className="description">Lungarno, Pisa, Italy.</p>
+        </div>
 
-        <img src={volterra} className="img-fluid" />
-        <p className="description">Volterra, Italy Dec, 2017</p>
+        <div className="image">
+          <img src={volterra} className="img-fluid" />
+          <p className="description">Volterra, Italy Dec, 2017</p>
+        </div>
 
-        <img src={sunseticeland} className="img-fluid" />
-        <p className="description">
-          Sunset in Iceland at 10:00 P.M. July, 2017
-        </p>
+        <div className="image">
+          <img src={sunseticeland} className="img-fluid" />
+          <p className="description">
+            Sunset in Iceland at 10:00 P.M. July, 2017
+          </p>
+        </div>
 
-        <img src={godafoss} className="img-fluid" />
-        <p className="description">Goðafoss waterfall in Iceland. July 2017.</p>
+        <div className="image">
+          <img src={godafoss} className="img-fluid" />
+          <p className="description">
+            Goðafoss waterfall in Iceland. July 2017.
+          </p>
+        </div>
 
-        <img src={geysir} className="img-fluid" />
-        <p className="description">Geysir, Iceland. July 2017</p>
+        <div className="image">
+          <img src={geysir} className="img-fluid" />
+          <p className="description">Geysir, Iceland. July 2017</p>
+        </div>
 
-        <img src={berlin} className="img-fluid" />
-        <p className="description">Berlin from the rooftop. Dec, 2017</p>
+        <div className="image">
+          <img src={berlin} className="img-fluid" />
+          <p className="description">Berlin from the rooftop. Dec, 2017</p>
+        </div>
 
-        <img src={neus} className="img-fluid" />
-        <p className="description">
-          Postcard from Neuschwanstein Castle, Germany. July 2017
-        </p>
+        <div className="image">
+          <img src={neus} className="img-fluid" />
+          <p className="description">
+            Postcard from Neuschwanstein Castle, Germany. July 2017
+          </p>
+        </div>
 
-        <img src={pisa} className="img-fluid" />
-        <p className="description">
-          Cattedrale Metropolitana Primaziale di Santa Maria Assunta, Pisa,
-          Italy Dec, 2017
-        </p>
+        <div className="image">
+          <img src={pisa} className="img-fluid" />
+          <p className="description">
+            Cattedrale Metropolitana Primaziale di Santa Maria Assunta, Pisa,
+            Italy Dec, 2017
+          </p>
+        </div>
 
-        <img src={towerBridge} className="img-fluid" />
-        <p className="description">
-          A walk trough Tower Bridge in London, UK. July, 2017.
-        </p>
+        <div className="image">
+          <img src={towerBridge} className="img-fluid" />
+          <p className="description">
+            A walk trough Tower Bridge in London, UK. July, 2017.
+          </p>
+        </div>
 
-        <img src={icelandPort} className="img-fluid" />
-        <p className="description">
-          Port full of colors in Iceland. July 2017.
-        </p>
+        <div className="image">
+          <img src={icelandPort} className="img-fluid" />
+          <p className="description">
+            Port full of colors in Iceland. July 2017.
+          </p>
+        </div>
 
-        <img src={livorno} className="img-fluid" />
-        <p className="description">Livorno, Italy Dec, 2018</p>
+        <div className="image">
+          <img src={livorno} className="img-fluid" />
+          <p className="description">Livorno, Italy Dec, 2018</p>
+        </div>
 
-        <img src={lungarno2} className="img-fluid" />
-        <p className="description">Lungarno, Pisa, Italy.</p>
+        <div className="image">
+          <img src={lungarno2} className="img-fluid" />
+          <p className="description">Lungarno, Pisa, Italy.</p>
+        </div>
 
-        <img src={godafossWaterfall} className="img-fluid" />
-        <p className="description">
-          Tomasz at Goðafoss waterfall in Iceland. July 2017.
-        </p>
+        <div className="image">
+          <img src={godafossWaterfall} className="img-fluid" />
+          <p className="description">
+            Tomasz at Goðafoss waterfall in Iceland. July 2017.
+          </p>
+        </div>
 
-        <img src={reykj2} className="img-fluid" />
-        <p>Colorful Reykjavík, Iceland. July 2017.</p>
+        <div className="image">
+          <img src={reykj2} className="img-fluid" />
+          <p>Colorful Reykjavík, Iceland. July 2017.</p>
+        </div>
 
-        <img src={sena} className="img-fluid" />
-        <p className="description">
-          Eiffel tower from a boat trough the Sena river. Paris, France. July,
-          2017
-        </p>
+        <div className="image">
+          <img src={sena} className="img-fluid" />
+          <p className="description">
+            Eiffel tower from a boat trough the Sena river. Paris, France. July,
+            2017
+          </p>
+        </div>
 
-        <img src={dettifoss} className="img-fluid" />
-        <p className="description">
-          Double rainbow in the most powerful waterfall of Europe, Dettifoss,
-          Iceland. July 2017
-        </p>
+        <div className="image">
+          <img src={dettifoss} className="img-fluid" />
+          <p className="description">
+            Double rainbow in the most powerful waterfall of Europe, Dettifoss,
+            Iceland. July 2017
+          </p>
+        </div>
       </Container>
     </Container>
   );

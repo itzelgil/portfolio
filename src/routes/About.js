@@ -34,7 +34,7 @@ export default function About() {
                 <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">UX/UI</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#link">Contact</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
               <Nav.Link href="#link">CV</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -89,14 +89,19 @@ export default function About() {
         <h3 className="skills-header text-center">SKILLS</h3>
         <br />
         <br />
+        <br />
         <div className="icons">
-          <SiHtml5 className="html icon" size={30} />
-          <DiCss3 className="css icon" size={35} />
-          <IoLogoJavascript className="js icon" size={35} />
-          <BsFillBootstrapFill className="bs icon" size={30} />
-          <FiFigma className="figma icon" size={30} />
-          <AiFillGithub className="github icon" size={35} />
-          <SiAdobexd className="adobexd icon" size={30} />
+          <SiHtml5 className="html icon" size={30} title="HTML" />
+          <DiCss3 className="css icon" size={35} title="CSS" />
+          <IoLogoJavascript className="js icon" size={35} title="JavaScript" />
+          <BsFillBootstrapFill
+            className="bs icon"
+            size={30}
+            title="Bootstrap"
+          />
+          <FiFigma className="figma icon" size={30} title="Figma" />
+          <AiFillGithub className="github icon" size={35} title="Github" />
+          <SiAdobexd className="adobexd icon" size={30} title="AdobeXD" />
         </div>
       </Row>
       <br />
