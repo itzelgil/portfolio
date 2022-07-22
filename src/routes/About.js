@@ -14,7 +14,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
-import { Outlet} from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -28,12 +28,13 @@ export default function About() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">
-              </Nav.Link>
+              <Link to="/">Home</Link>
+              <Nav.Link href="/about"></Nav.Link>
               <NavDropdown title="Projects" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Coding</NavDropdown.Item>
-                <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
+                <NavDropdown.Item href="/photo">
+                  <Link to="/photo">Photography</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">UX/UI</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/contact">Contact</Nav.Link>
