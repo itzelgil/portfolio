@@ -49,7 +49,7 @@ export default function Photography() {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
               <NavDropdown title="Projects" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Coding</NavDropdown.Item>
+                <NavDropdown.Item href="/coding">Coding</NavDropdown.Item>
                 <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">UX/UI</NavDropdown.Item>
               </NavDropdown>
