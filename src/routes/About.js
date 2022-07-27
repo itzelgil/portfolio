@@ -1,6 +1,5 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -18,10 +17,10 @@ import { Outlet } from "react-router-dom";
 
 export default function About() {
   return (
-    <Container fluid>
+    <div>
       <Navbar bg="dark" expand="md" variant="dark" className="navbar">
         <Navbar.Brand href="/">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="logo" alt="logo" />
         </Navbar.Brand>
         <Nav className="justify-content-end" style={{ width: "100%" }}></Nav>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -107,6 +106,6 @@ export default function About() {
       <br />
       <br />
       <Outlet />
-    </Container>
+    </div>
   );
 }

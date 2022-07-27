@@ -36,28 +36,26 @@ import { Outlet } from "react-router-dom";
 
 export default function Photography() {
   return (
-    <Container fluid>
+    <div>
       <Navbar bg="dark" expand="md" variant="dark" className="navbarPhoto">
-        <Container>
-          <Navbar.Brand href="/">
-            <img src={logo} className="App-logo" alt="logo" />
-          </Navbar.Brand>
-          <Nav className="justify-content-end" style={{ width: "100%" }}></Nav>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <NavDropdown title="Projects" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/coding">Coding</NavDropdown.Item>
-                <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">UX/UI</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="/Contact">Contact</Nav.Link>
-              <Nav.Link href="#link">CV</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+        <Navbar.Brand href="/">
+          <img src={logo} className="logo" alt="logo" />
+        </Navbar.Brand>
+        <Nav className="justify-content-end" style={{ width: "100%" }}></Nav>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            <NavDropdown title="Projects" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/coding">Coding</NavDropdown.Item>
+              <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">UX/UI</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/Contact">Contact</Nav.Link>
+            <Nav.Link href="#link">CV</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
 
       <h2 className="photo-title">PHOTOGRAPHY</h2>
@@ -236,6 +234,6 @@ export default function Photography() {
         </div>
       </Container>
       <Outlet />
-    </Container>
+    </div>
   );
 }
