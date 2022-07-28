@@ -32,8 +32,8 @@ export default function Coding() {
               <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
               <NavDropdown.Item href="/uxui">UX/UI</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/contact">Contact</Nav.Link>
             <Nav.Link href="/cv">CV</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
