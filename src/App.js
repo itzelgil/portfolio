@@ -1,7 +1,7 @@
 import "./App.css";
 import Row from "react-bootstrap/Row";
 import { Outlet, Link } from "react-router-dom";
-import Typewriter from "react-simple-typewriter";
+import Typewriter from "typewriter-effect";
 
 function App() {
   return (
@@ -15,16 +15,19 @@ function App() {
       <Row className="row">
         <span className="name-ocupation">
           <Typewriter
-            loop
-            cursor
-            cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
-            words={["Front-end Developer", "UX/UI Designer", "Photographer"]}
+            options={{
+              strings: [
+                "Front-end Developer",
+                "UX/UI Designer",
+                "Photographer",
+              ],
+              autoStart: true,
+              loop: true,
+              speed: "50",
+              delay: "70",
+            }}
           />
         </span>
-        {/* <p className="name-ocupation">Front-end Developer</p> */}
       </Row>
 
       <Row className="row">

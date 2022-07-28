@@ -55,9 +55,9 @@ h1 {
   border-radius: 10px;
   padding: 8px 10px;
   text-align: center;
-  border: 3px solid #7237e896;
+  border: 3px solid #7237e86b;
   text-decoration: none;
-  background-color: #c696eb;
+  background-color: #c696eb62;
   box-shadow: #b4436c;
   color: white;
   transition: background-color 0.5s;
@@ -109,7 +109,7 @@ h1 {
 .App-profile {
   width: 380px;
   height: auto;
-  border-radius: 200px;
+  border-radius: 20px;
 }
 
 .icons,

@@ -192,7 +192,9 @@ export default function Coding() {
             <Card.Body>
               <Card.Title className="cardName">TRELLO APP</Card.Title>
               <hr />
-              <Card.Text className="project-description">test</Card.Text>
+              <Card.Text className="project-description">
+                In progress...
+              </Card.Text>
               <ListGroup className="list-group-flush">
                 <br />
                 <ListGroup.Item className="languages">
@@ -217,7 +219,9 @@ export default function Coding() {
             <Card.Body>
               <Card.Title className="cardName">THE MOVIE DB</Card.Title>
               <hr />
-              <Card.Text className="project-description">test</Card.Text>
+              <Card.Text className="project-description">
+                In progress...
+              </Card.Text>
               <ListGroup className="list-group-flush">
                 <br />
                 <ListGroup.Item className="languages">
