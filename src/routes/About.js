@@ -27,14 +27,14 @@ export default function About() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about"></Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item href="/coding">Coding</NavDropdown.Item>
               <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">UX/UI</NavDropdown.Item>
+              <NavDropdown.Item href="/uxui">UX/UI</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/contact">Contact</Nav.Link>
-            <Nav.Link href="#link">CV</Nav.Link>
+            <Nav.Link href="/cv">CV</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -47,11 +47,12 @@ export default function About() {
           <br />
           <br />
           <br />
-          <Image
-            className="App-profile d-block mx-auto img-fluid w-50"
-            src={profile}
-          />
-
+          <div className="image-wrapper">
+            <Image
+              className="App-profile d-block mx-auto img-fluid w-50"
+              src={profile}
+            />
+          </div>
           <br />
           <br />
         </Col>
@@ -59,8 +60,10 @@ export default function About() {
           <br />
           <br />
           <br />
-          <p className="about-me text-center">
-            <strong>Front-end Developer</strong> from México.
+          <h2 className="name ">Hi, I'm Itzel.</h2>
+          <br />
+          <p className="about-me">
+            <strong>Junior Front-end Developer</strong> from México.
             <br />
             <br />
             I'm from San Luis Potosí, located in the center of México. It's a

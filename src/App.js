@@ -17,7 +17,7 @@ function App() {
           <Typewriter
             options={{
               strings: [
-                "Front-end Developer",
+                "Junior Front-end Developer",
                 "UX/UI Designer",
                 "Photographer",
               ],

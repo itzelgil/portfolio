@@ -27,10 +27,10 @@ export default function Photography() {
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item href="/coding">Coding</NavDropdown.Item>
               <NavDropdown.Item href="/photo">Photography</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">UX/UI</NavDropdown.Item>
+              <NavDropdown.Item href="/uxui">UX/UI</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/contact">Contact</Nav.Link>
-            <Nav.Link href="#link">CV</Nav.Link>
+            <Nav.Link href="/cv">CV</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -5,6 +5,8 @@ import About from "./routes/About";
 import Photography from "./routes/Photography";
 import Contact from "./routes/Contact";
 import Coding from "./routes/Coding";
+import Uxui from "./routes/Uxui";
+import Cv from "./routes/Cv";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +17,8 @@ root.render(
       <Route path="photo" element={<Photography />} />
       <Route path="contact" element={<Contact />} />
       <Route path="coding" element={<Coding />} />
+      <Route path="uxui" element={<Uxui />} />
+      <Route path="cv" element={<Cv />} />
     </Routes>
   </BrowserRouter>
 );
