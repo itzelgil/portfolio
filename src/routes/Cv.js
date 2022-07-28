@@ -34,6 +34,7 @@ export default function About() {
         {/* <h2 className="cv-title">CV</h2> */}
 
         <h2 className="cv-title">THIS PAGE IS UNDER CONSTRUCTION</h2>
+        <h4 className="text-center">We're working on it!</h4>
       </Row>
       <div className="illust-wrapper">
         <Image
