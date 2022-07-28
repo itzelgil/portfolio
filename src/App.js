@@ -29,7 +29,7 @@ function App() {
           />
         </span>
       </Row>
-
+      <br />
       <Row className="row">
         <Link to="/about" className="enter-button">
           ENTER
