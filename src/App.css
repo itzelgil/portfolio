@@ -9,6 +9,7 @@ body {
   background-color: #ffffff;
   height: auto;
   width: auto;
+  overflow-x: hidden;
 }
 /* Home */
 .App {
