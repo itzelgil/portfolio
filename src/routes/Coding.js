@@ -13,6 +13,8 @@ import weatherapp from "./projects/weather-app.png";
 import portfolio from "./projects/portfolio.png";
 import reactweatherapp from "./projects/reactWeather-app.png";
 import dictionary from "./projects/dictionary-app.png";
+import tmdb from "./projects/tmdb.png";
+import trello from "./projects/trello.png";
 
 export default function Coding() {
   return (
@@ -94,7 +96,7 @@ export default function Coding() {
               <br />
               <Button
                 variant="outline-primary"
-                href="https://glittery-malabi-c02f32.netlify.app/"
+                href="https://weather-app-js-itzel.netlify.app/"
                 target="_blank"
                 className="view-button"
               >
@@ -119,7 +121,7 @@ export default function Coding() {
               <br />
               <Button
                 variant="outline-primary"
-                href="https://ubiquitous-gnome-f8865b.netlify.app"
+                href="https://portfolio-itzel-responsive.netlify.app"
                 target="_blank"
                 className="view-button"
               >
@@ -145,7 +147,7 @@ export default function Coding() {
               <br />
               <Button
                 variant="outline-primary"
-                href="https://eclectic-cannoli-33a8da.netlify.app/"
+                href="https://react-weatherapp-itzel.netlify.app/"
                 target="_blank"
                 className="view-button"
               >
@@ -177,7 +179,7 @@ export default function Coding() {
               <br />
               <Button
                 variant="outline-primary"
-                href="https://tangerine-crisp-eb7f0a.netlify.app"
+                href="https://reactapp-dictionary-itzel.netlify.app"
                 target="_blank"
                 className="view-button"
                 size="sm"
@@ -188,7 +190,7 @@ export default function Coding() {
           </Card>
 
           <Card style={{ width: "18rem", margin: "10px" }}>
-            <Card.Img variant="top" src="" />
+            <Card.Img variant="top" src={trello} />
             <Card.Body>
               <Card.Title className="cardName">TRELLO APP</Card.Title>
               <hr />
@@ -204,7 +206,7 @@ export default function Coding() {
               <br />
               <Button
                 variant="outline-primary"
-                href="#"
+                href="https://trelloclonetodolist.netlify.app"
                 target="_blank"
                 className="view-button"
                 size="sm"
@@ -215,12 +217,20 @@ export default function Coding() {
           </Card>
 
           <Card style={{ width: "18rem", margin: "10px" }}>
-            <Card.Img variant="top" src="" />
+            <Card.Img variant="top" src={tmdb} />
             <Card.Body>
               <Card.Title className="cardName">THE MOVIE DB</Card.Title>
               <hr />
               <Card.Text className="project-description">
-                In progress...
+                Movie app created to search movies, series and actors. Getting
+                the data from{" "}
+                <Card.Link
+                  href="https://www.themoviedb.org/documentation/api?language=es-ES"
+                  className="project-description"
+                >
+                  TMDB API.
+                  <br />
+                </Card.Link>
               </Card.Text>
               <ListGroup className="list-group-flush">
                 <br />
@@ -231,7 +241,7 @@ export default function Coding() {
               <br />
               <Button
                 variant="outline-primary"
-                href="#"
+                href="https://themoviedb-app-itzel.netlify.app/"
                 target="_blank"
                 className="view-button"
                 size="sm"

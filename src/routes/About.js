@@ -60,10 +60,11 @@ export default function About() {
           <br />
           <br />
           <br />
-          <h2 className="name ">Hi, I'm Itzel.</h2>
+          <h2 className="name ">Hi, I'm Itzel</h2>
           <br />
           <p className="about-me">
-            <strong>Junior Front-end Developer</strong> from México.
+            <strong className="jr">Junior Front-end Developer</strong> from
+            México.
             <br />
             <br />
             I'm from San Luis Potosí, located in the center of México. It's a
