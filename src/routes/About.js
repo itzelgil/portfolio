@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "./logo.png";
-import profile from "./perfil.jpeg";
+import profile from "./perfil.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { SiHtml5, SiAdobexd } from "react-icons/si";
@@ -38,52 +38,75 @@ export default function About() {
         </Navbar.Collapse>
       </Navbar>
 
-      <Row className="justify-content-center">
+      {/* <Row className="justify-content-center">
         <h2 className="about-title text-center">ABOUT ME</h2>
-      </Row>
+      </Row> */}
+
       <Row className="row about-container">
         <Col className="justify-content-center">
-          <br />
-          <br />
-          <br />
           <div className="image-wrapper">
-            <Image
-              className="d-block mx-auto img-fluid w-30 App-profile"
-              src={profile}
-            />
+            <br />
+            <br />
+            <Image className="d-block mx-auto w-30 App-profile" src={profile} />
           </div>
         </Col>
-        <Col className="justify-content-center">
+        <Col className="my-auto name-container">
+          <h2 className="name">ITZEL GIL</h2>
+          <h2 className="name-sec">FRONT-END DEVELOPER</h2>
+          <h2 className="name-sec">UX/UI DESIGNER</h2>
           <br />
-          <br />
-          <h2 className="name">Hi, I'm Itzel 👋🏽</h2>
-          <p>
-            <h6 className="strong">
-              Junior Front End Developer and UX/UI Designer.{" "}
-            </h6>
+          <p className="about-me-text">
             Passionate about design and technology. After years of study and
             different professional decisions, I found a way to unify my two
             passions with the development of attractive, interactive and
             innovative applications and websites.
             <br />
             <br />
-            I started my professional life in an area that I didn't really
+            My goal is to remain on the cutting-edge of advancements. I like to
+            take time to acquire new knowledge. Learn about new tools, and
+            challenges motivate me.
+            <br />
+            <br />I started my professional life in an area that I didn't really
             enjoy, so I decided to start a new adventure in the world of
             programming as a Front-end Developer. After some time wanting to
             explore my creativity through digital environments, I decided to
             start training as a UX designer as well, and I gained a set of
             professional knowledge and skills useful for generating high-impact
             projects.
-            <br />
-            <br />
-            My goal is to remain on the cutting-edge of advancements. I like to
-            take time to acquire new knowledge. Learn about new tools, and
-            challenges motivate me.
           </p>
         </Col>
+
+        <Row className="about-me">
+          {/* <Col className="my-auto"></Col> */}
+          <Col className="my-auto">
+            <br />
+            <h3 className="skills-header text-center">SKILLS</h3>
+            <br />
+            <div className="icons">
+              <SiHtml5 className="html icon" size={30} title="HTML" />
+              <DiCss3 className="css icon" size={35} title="CSS" />
+              <IoLogoJavascript
+                className="js icon"
+                size={35}
+                title="JavaScript"
+              />
+              <BsFillBootstrapFill
+                className="bs icon"
+                size={30}
+                title="Bootstrap"
+              />
+              <FiFigma className="figma icon" size={30} title="Figma" />
+              <AiFillGithub className="github icon" size={35} title="Github" />
+              <SiAdobexd className="adobexd icon" size={30} title="AdobeXD" />
+            </div>
+          </Col>
+        </Row>
       </Row>
       <Row>
-        <h3 className="skills-header text-center">SKILLS</h3>
+        <h3 className="phrase">Let's work together!</h3>
+      </Row>
+      <Row>
+        {/* <h3 className="skills-header text-center">SKILLS</h3>
         <br />
         <br />
         <br />
@@ -99,11 +122,8 @@ export default function About() {
           <FiFigma className="figma icon" size={30} title="Figma" />
           <AiFillGithub className="github icon" size={35} title="Github" />
           <SiAdobexd className="adobexd icon" size={30} title="AdobeXD" />
-        </div>
+        </div> */}
       </Row>
-      <br />
-      <br />
-      <br />
       <Outlet />
     </div>
   );
