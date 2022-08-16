@@ -114,14 +114,30 @@ h1 {
 }
 
 .about-me {
-  text-align: left;
+  text-align: center;
   padding-right: 80px;
+  margin: 30px;
+}
+
+.about-container {
+  margin: 30px;
 }
 
 .App-profile {
-  width: 380px;
+  width: 420px;
   height: auto;
-  border-radius: 20px;
+  filter: grayscale(100%);
+  border-radius: 15px;
+  transition: filter 300ms;
+}
+
+.App-profile:is(:hover, :focus) {
+  filter: grayscale(0%);
+}
+
+.strong {
+  font-weight: bold;
+  color: black;
 }
 
 .skills-header {

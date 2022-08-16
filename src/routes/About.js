@@ -26,7 +26,6 @@ export default function About() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item href="/coding">Coding</NavDropdown.Item>
@@ -42,52 +41,48 @@ export default function About() {
       <Row className="justify-content-center">
         <h2 className="about-title text-center">ABOUT ME</h2>
       </Row>
-      <Row className="row">
+      <Row className="row about-container">
         <Col className="justify-content-center">
           <br />
           <br />
           <br />
           <div className="image-wrapper">
             <Image
-              className="App-profile d-block mx-auto img-fluid w-50"
+              className="d-block mx-auto img-fluid w-30 App-profile"
               src={profile}
             />
           </div>
-          <br />
-          <br />
         </Col>
         <Col className="justify-content-center">
           <br />
           <br />
-          <br />
-          <h2 className="name ">Hi, I'm Itzel</h2>
-          <br />
-          <p className="about-me">
-            <strong className="jr">Junior Front-end Developer</strong> from
-            México.
+          <h2 className="name">Hi, I'm Itzel 👋🏽</h2>
+          <p>
+            <h6 className="strong">
+              Junior Front End Developer and UX/UI Designer.{" "}
+            </h6>
+            Passionate about design and technology. After years of study and
+            different professional decisions, I found a way to unify my two
+            passions with the development of attractive, interactive and
+            innovative applications and websites.
             <br />
             <br />
-            I'm from San Luis Potosí, located in the center of México. It's a
-            very colorful city full of biodiversity and the most tasty and
-            delicious food. 🤤
+            I started my professional life in an area that I didn't really
+            enjoy, so I decided to start a new adventure in the world of
+            programming as a Front-end Developer. After some time wanting to
+            explore my creativity through digital environments, I decided to
+            start training as a UX designer as well, and I gained a set of
+            professional knowledge and skills useful for generating high-impact
+            projects.
             <br />
             <br />
-            Currently based in Barcelona, Spain. After a few years of working in
-            an area I didn't enjoyed, I decided to start a new journey in the IT
-            world.
-            <br />
-            <br />
-            I love to take photos of everything I see, in my free time I love to
-            cook, illustrate or take a long walk with Coco (my dog) ♥️
-            <br />
-            <br />
-            Let's work together!
+            My goal is to remain on the cutting-edge of advancements. I like to
+            take time to acquire new knowledge. Learn about new tools, and
+            challenges motivate me.
           </p>
         </Col>
       </Row>
-      <br />
-
-      <Row className="skills-div justify-content-center">
+      <Row>
         <h3 className="skills-header text-center">SKILLS</h3>
         <br />
         <br />
