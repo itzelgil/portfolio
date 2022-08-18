@@ -51,7 +51,7 @@ export default function About() {
           </div>
         </Col>
         <Row>
-          <Col className="col-2"></Col>
+          <Col className="col-1"></Col>
           <Col className="my-auto name-container">
             {/* <h2 className="name">ITZEL GIL</h2>
           <h2 className="name-sec">FRONT-END DEVELOPER</h2>
@@ -78,7 +78,7 @@ export default function About() {
               challenges motivate me.
             </p>
           </Col>
-          <Col className="col-2"></Col>
+          <Col className="col-1"></Col>
         </Row>
 
         <Row className="about-me">
