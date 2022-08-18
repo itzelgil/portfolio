@@ -10,6 +10,7 @@ body {
   height: auto;
   width: auto;
   overflow-x: hidden;
+  font-size: 1em;
 }
 /* Home */
 .App {
@@ -96,7 +97,7 @@ h1 {
   border-bottom: 4px solid #bf98f6;
 }
 
-.about-title {
+/* .about-title {
   margin: 30px;
   font-size: 42px;
   font-weight: bold;
@@ -111,14 +112,15 @@ h1 {
   margin: 0 auto;
   margin-top: 7px;
   border-radius: 3px;
-}
+} */
 
 .about-container {
   margin: 30px;
   justify-content: center;
 }
 .about-me-text {
-  font-size: 18px;
+  font-size: 1em;
+  text-align: justify;
 }
 
 .name-container {
@@ -140,7 +142,7 @@ h1 {
 }
 
 .App-profile {
-  width: 100%;
+  width: 65%;
   height: auto;
   min-width: 80px;
   filter: grayscale(100%);
@@ -319,7 +321,7 @@ h1 {
 }
 
 .uxui-title {
-  font-size: 42px;
+  font-size: 1.75em;
   text-align: center;
   margin: 30px;
 }
@@ -344,7 +346,7 @@ h1 {
 }
 
 .contact-title {
-  font-size: 42px;
+  font-size: 1.75em;
   text-align: center;
   margin: 30px;
 }
@@ -367,7 +369,7 @@ h1 {
 .email,
 .social {
   text-align: center;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .email a {
@@ -376,7 +378,7 @@ h1 {
 }
 
 .social {
-  font-size: 24px;
+  font-size: 1.2em;
   margin: 5px 0 0;
 }
 
@@ -387,7 +389,7 @@ h1 {
 
 .contact-icon {
   display: inline-block;
-  font-size: 34px;
+  font-size: 1.5em;
 }
 
 .signature {
@@ -409,7 +411,7 @@ h1 {
 }
 
 .cv-title {
-  font-size: 42px;
+  font-size: 1.75em;
   text-align: center;
   margin: 30px;
 }

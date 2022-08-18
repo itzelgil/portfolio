@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "./logo.png";
-import profile from "./perfil.png";
+import profile from "./banner.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { SiHtml5, SiAdobexd } from "react-icons/si";
@@ -50,31 +50,36 @@ export default function About() {
             <Image className="d-block mx-auto w-30 App-profile" src={profile} />
           </div>
         </Col>
-        <Col className="my-auto name-container">
-          <h2 className="name">ITZEL GIL</h2>
+        <Row>
+          <Col className="col-2"></Col>
+          <Col className="my-auto name-container">
+            {/* <h2 className="name">ITZEL GIL</h2>
           <h2 className="name-sec">FRONT-END DEVELOPER</h2>
           <h2 className="name-sec">UX/UI DESIGNER</h2>
-          <br />
-          <p className="about-me-text">
-            Passionate about design and technology. After years of study and
-            different professional decisions, I found a way to unify my two
-            passions with the development of attractive, interactive and
-            innovative applications and websites.
+          <br /> */}
             <br />
-            <br />
-            My goal is to remain on the cutting-edge of advancements. I like to
-            take time to acquire new knowledge. Learn about new tools, and
-            challenges motivate me.
-            <br />
-            <br />I started my professional life in an area that I didn't really
-            enjoy, so I decided to start a new adventure in the world of
-            programming as a Front-end Developer. After some time wanting to
-            explore my creativity through digital environments, I decided to
-            start training as a UX designer as well, and I gained a set of
-            professional knowledge and skills useful for generating high-impact
-            projects.
-          </p>
-        </Col>
+            <p className="about-me-text">
+              Passionate about design and technology. After years of study and
+              different professional decisions, I found a way to unify my two
+              passions with the development of attractive, interactive and
+              innovative applications and websites.
+              <br />
+              <br />I started my professional life in an area that I didn't
+              really enjoy, so I decided to start a new adventure in the world
+              of programming as a Front-end Developer. After some time wanting
+              to explore my creativity through digital environments, I decided
+              to start training as a UX designer as well, and I gained a set of
+              professional knowledge and skills useful for generating
+              high-impact projects.
+              <br />
+              <br />
+              My goal is to remain on the cutting-edge of advancements. I like
+              to take time to acquire new knowledge. Learn about new tools, and
+              challenges motivate me.
+            </p>
+          </Col>
+          <Col className="col-2"></Col>
+        </Row>
 
         <Row className="about-me">
           {/* <Col className="my-auto"></Col> */}
