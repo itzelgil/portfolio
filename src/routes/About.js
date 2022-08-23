@@ -7,13 +7,13 @@ import logo from "./logo.png";
 import profile from "./banner.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { SiHtml5, SiAdobexd } from "react-icons/si";
-import { DiCss3 } from "react-icons/di";
-import { IoLogoJavascript } from "react-icons/io";
-import { BsFillBootstrapFill } from "react-icons/bs";
-import { FiFigma } from "react-icons/fi";
-import { AiFillGithub } from "react-icons/ai";
-import { Outlet } from "react-router-dom";
+// import { SiHtml5, SiAdobexd } from "react-icons/si";
+// import { DiCss3 } from "react-icons/di";
+// import { IoLogoJavascript } from "react-icons/io";
+// import { BsFillBootstrapFill } from "react-icons/bs";
+// import { FiFigma } from "react-icons/fi";
+// import { AiFillGithub } from "react-icons/ai";
+// import { Outlet } from "react-router-dom";
 import html from "./icons/html.png";
 import css from "./icons/css.png";
 import js from "./icons/js.png";
@@ -90,7 +90,7 @@ export default function About() {
         <Row className="about-me">
           <br />
           <div className="icons">
-            <Image className="html" src={html}  />
+            <Image className="html" src={html} />
             <Image className="css" src={css} />
             <Image className="js" src={js} />
             <Image className="bootstrap" src={bootstrap} />
