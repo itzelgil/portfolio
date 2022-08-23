@@ -13,7 +13,7 @@ import Col from "react-bootstrap/Col";
 // import { BsFillBootstrapFill } from "react-icons/bs";
 // import { FiFigma } from "react-icons/fi";
 // import { AiFillGithub } from "react-icons/ai";
-// import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import html from "./icons/html.png";
 import css from "./icons/css.png";
 import js from "./icons/js.png";
