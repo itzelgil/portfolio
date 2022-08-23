@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
   font-size: 1em;
 }
+
 /* Home */
 .App {
   background: linear-gradient(
@@ -159,56 +160,55 @@ h1 {
   font-weight: bold;
 }
 
-.icons,
-.icon {
-  font-size: 40px;
-  animation: float 3s ease-in-out infinite;
-  color: #c696eb;
-  text-align: center;
-  padding: 1px;
-}
-
-.html {
-  animation-delay: 1s;
+.html,
+.js,
+.bootstrap,
+.react,
+.figma {
+  width: 65px;
+  height: auto;
+  display: inline-block;
 }
 .css {
-  animation-delay: 1.5s;
+  width: 63px;
+  height: auto;
 }
 
-.js {
-  animation-delay: 2s;
-}
-
-.bs {
-  animation-delay: 2.5s;
-}
-.figma {
-  animation-delay: 3s;
-}
-
-.github {
-  animation-delay: 3.5s;
-}
-.adobexd {
-  animation-delay: 4s;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.icons {
+  text-align: center;
 }
 
 .phrase {
   text-align: center;
   padding: 20px;
 }
+
+@media (max-width: 576px) {
+  .App-profile {
+    width: 100%;
+    height: auto;
+  }
+  .html,
+  .js,
+  .bootstrap,
+  .react,
+  .figma {
+    width: 45px;
+    height: auto;
+  }
+  .css {
+    width: 43px;
+    height: auto;
+  }
+  .about-me-text {
+    font-size: 0.8em;
+  }
+  .skills-header,
+  .phrase {
+    font-size: 1em;
+  }
+}
+
 /* CODING */
 
 .card-container {
@@ -335,6 +335,19 @@ h1 {
   margin: 0 auto;
   margin-top: 7px;
   border-radius: 3px;
+}
+
+.wawanimal {
+  text-align: center;
+  padding: 20px;
+}
+
+.mockup-app {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  display: block;
+  border-radius: 20px;
 }
 
 /* CONTACT */

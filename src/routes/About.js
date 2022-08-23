@@ -14,6 +14,12 @@ import { BsFillBootstrapFill } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { Outlet } from "react-router-dom";
+import html from "./icons/html.png";
+import css from "./icons/css.png";
+import js from "./icons/js.png";
+import bootstrap from "./icons/bootstrap.png";
+import react from "./icons/react.png";
+import figma from "./icons/figma.png";
 
 export default function About() {
   return (
@@ -51,7 +57,7 @@ export default function About() {
           </div>
         </Col>
         <Row>
-          <Col className="col-1"></Col>
+          <Col className="col-2"></Col>
           <Col className="my-auto name-container">
             {/* <h2 className="name">ITZEL GIL</h2>
           <h2 className="name-sec">FRONT-END DEVELOPER</h2>
@@ -78,14 +84,23 @@ export default function About() {
               challenges motivate me.
             </p>
           </Col>
-          <Col className="col-1"></Col>
+          <Col className="col-2"></Col>
         </Row>
-
+        <h3 className="skills-header text-center">SKILLS</h3>
         <Row className="about-me">
+          <br />
+          <div className="icons">
+            <Image className="html" src={html}  />
+            <Image className="css" src={css} />
+            <Image className="js" src={js} />
+            <Image className="bootstrap" src={bootstrap} />
+            <Image className="react" src={react} />
+            <Image className="figma" src={figma} />
+          </div>
           {/* <Col className="my-auto"></Col> */}
-          <Col className="my-auto">
+          {/* <Col className="my-auto">
             <br />
-            <h3 className="skills-header text-center">SKILLS</h3>
+            
             <br />
             <div className="icons">
               <SiHtml5 className="html icon" size={30} title="HTML" />
@@ -104,7 +119,7 @@ export default function About() {
               <AiFillGithub className="github icon" size={35} title="Github" />
               <SiAdobexd className="adobexd icon" size={30} title="AdobeXD" />
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </Row>
       <Row>
