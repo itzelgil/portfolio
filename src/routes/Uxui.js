@@ -4,8 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Row, Image, Col } from "react-bootstrap";
 import logo from "./logo.png";
-// import illustration from "./illustrationgreen.png";
-import mockup from "./wawanimal-mockup.jpg";
+import illustration from "./illustrationgreen.png";
+// import mockup from "./wawanimal-mockup.jpg";
 
 export default function About() {
   return (
