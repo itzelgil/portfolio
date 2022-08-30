@@ -98,25 +98,8 @@ h1 {
   border-bottom: 4px solid #bf98f6;
 }
 
-/* .about-title {
-  margin: 30px;
-  font-size: 42px;
-  font-weight: bold;
-}
-
-.about-title:after {
-  content: "";
-  display: block;
-  width: 150px;
-  height: 4px;
-  background: #bf98f6;
-  margin: 0 auto;
-  margin-top: 7px;
-  border-radius: 3px;
-} */
 
 .about-container {
-  margin: 30px;
   justify-content: center;
 }
 .about-me-text {
@@ -126,38 +109,33 @@ h1 {
 
 .name-container {
   left: 10px;
+  margin: 50px;
   @media (min-width: 330px) {
     text-align: center;
     font-size: 24px;
   }
 }
 
-.name {
-  letter-spacing: 10px;
-  font-size: 40px;
-}
-
-.name-sec {
-  letter-spacing: 10px;
-  font-size: 25px;
-}
-
 .App-profile {
-  width: 65%;
+  width: 80%;
   height: auto;
   min-width: 80px;
   filter: grayscale(100%);
   border-radius: 10px;
   transition: filter 300ms;
-  margin-left: 200px;
+  margin-top: 30px;
+  padding: 20px;
 }
 
 .App-profile:is(:hover, :focus) {
   filter: grayscale(0%);
 }
 
-.skills-header {
+.skills-header,
+.phrase {
   font-weight: bold;
+  text-align: center;
+  padding: 20px;
 }
 
 .html,
@@ -165,22 +143,19 @@ h1 {
 .bootstrap,
 .react,
 .figma {
-  width: 65px;
+  width: 50px;
   height: auto;
   display: inline-block;
+  margin-right: 20px;
 }
 .css {
-  width: 63px;
+  width: 47px;
   height: auto;
+  margin-right: 20px;
 }
 
 .icons {
   text-align: center;
-}
-
-.phrase {
-  text-align: center;
-  padding: 20px;
 }
 
 @media (max-width: 576px) {
@@ -193,11 +168,11 @@ h1 {
   .bootstrap,
   .react,
   .figma {
-    width: 45px;
+    width: 25px;
     height: auto;
   }
   .css {
-    width: 43px;
+    width: 23px;
     height: auto;
   }
   .about-me-text {

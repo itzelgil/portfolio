@@ -33,10 +33,10 @@ export default function About() {
       <Row className="justify-content-center">
         <h2 className="uxui-title">UX/UI </h2>
 
-        {/* <h2 className="uxui-title">THIS PAGE IS UNDER CONSTRUCTION</h2>
-        <h4 className="text-center">We're working on it!</h4> */}
+        <h2 className="uxui-title">THIS PAGE IS UNDER CONSTRUCTION</h2>
+        <h4 className="text-center">We're working on it!</h4>
       </Row>
-      <Row className="justify-content-center wawanimal">
+      {/* <Row className="justify-content-center wawanimal">
         <Col className="my-auto">
           <Image className="mockup-app d-block mx-auto w-30" src={mockup} />
         </Col>
@@ -60,13 +60,13 @@ export default function About() {
             vitae cursus lectus.
           </p>
         </Col>
-      </Row>
-      {/* <div className="illust-wrapper">
+      </Row> */}
+      <div className="illust-wrapper">
         <Image
           className="App-profile d-block mx-auto img-fluid w-50"
           src={illustration}
         />
-      </div> */}
+      </div>
     </div>
   );
 }
